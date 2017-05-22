@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 # @Author: bobur
 # @Date:   2017-05-20 17:49:46
-# @Last Modified by:   bobur
-# @Last Modified time: 2017-05-22 11:59:41
+# @Last Modified by:   bobur554395
+# @Last Modified time: 2017-05-22 12:20:01
 
 
-from generator import generateData
+from generator import Generator
 from table_save import TableBase
 from queue_save import QueueBase
 from blob_save import BlobBase
@@ -14,7 +14,8 @@ from blob_save import BlobBase
 
 
 # generate random numbers and save to file
-generateData()
+generator = Generator()
+generator.generateData1()
 
 
 

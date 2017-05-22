@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 # @Author: bobur
 # @Date:   2017-05-20 17:59:28
-# @Last Modified by:   bobur
-# @Last Modified time: 2017-05-22 12:02:44
+# @Last Modified by:   bobur554395
+# @Last Modified time: 2017-05-22 12:18:47
 
 
 
 import datetime
 from azure.storage.table import TableService, Entity
+from lxml import etree
 
 
 # table_service.create_table('generateddata')
@@ -29,11 +30,23 @@ class TableBase(object):
 		self.table_service.insert_or_replace_entity('datatable', row)
 
 
+
 	def set_result(self, sum, status):
 		print 'updating table row with result...\n'
 		date = datetime.datetime.now().strftime("%Y-%m-%d")
 		generator = 'G1_' + date
-		row = { 'PartitionKey': generator, 'RowKey': date, 'result': '<sum>'+str(sum)+'</sum>', 'status': status}
+
+		xml = '<?xml version="1.0"?><sum>'+str(sum)+'</sum>'
+
+		row = { 'PartitionKey': generator, 'RowKey': date, 'result': xml, 'status': status}
 		self.table_service.update_entity('datatable', row)
 
 
+	def create_xml_string(self, _sum):
+		root = etree.Element('root')
+		root.append(etree.Element('sum'))
+		sum = etree.Element('sum')
+		sum.text = _sum
+		root.append(sum)
+		s = etree.tostring(root, pretty_print=True)
+		return s

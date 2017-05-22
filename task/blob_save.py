@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # @Author: bobur
 # @Date:   2017-05-22 10:28:48
-# @Last Modified by:   bobur
-# @Last Modified time: 2017-05-22 11:57:52
+# @Last Modified by:   bobur554395
+# @Last Modified time: 2017-05-22 12:06:13
 
 
 from azure.storage.blob import BlockBlobService, ContentSettings
@@ -30,4 +30,3 @@ class BlobBase(object):
 		return url
 	
 		
-
