@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "BoburWorkers", "Workers\BoburWorkers.ccproj", "{A9F7B3C2-1695-4B70-9C0A-92B5491C17C2}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Worker0", "Worker0\Worker0.pyproj", "{158596F7-6F68-4EC6-8513-9E56CD3CAF2B}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Worker1", "Worker1\Worker1.pyproj", "{79839B67-BC1C-4840-956C-2B95FDC610FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9F7B3C2-1695-4B70-9C0A-92B5491C17C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9F7B3C2-1695-4B70-9C0A-92B5491C17C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9F7B3C2-1695-4B70-9C0A-92B5491C17C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9F7B3C2-1695-4B70-9C0A-92B5491C17C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{158596F7-6F68-4EC6-8513-9E56CD3CAF2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{158596F7-6F68-4EC6-8513-9E56CD3CAF2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{158596F7-6F68-4EC6-8513-9E56CD3CAF2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{158596F7-6F68-4EC6-8513-9E56CD3CAF2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79839B67-BC1C-4840-956C-2B95FDC610FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79839B67-BC1C-4840-956C-2B95FDC610FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79839B67-BC1C-4840-956C-2B95FDC610FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79839B67-BC1C-4840-956C-2B95FDC610FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
