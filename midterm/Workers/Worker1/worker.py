@@ -10,6 +10,8 @@ from QueueBase import QueueBase
 
 
 
+
+
 if __name__ == '__main__':
     queue = QueueBase()
     table = TableBase()
