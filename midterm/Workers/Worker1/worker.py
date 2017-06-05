@@ -7,6 +7,9 @@ from random import randint
 from TableBase import TableBase
 from QueueBase import QueueBase
 
+
+
+
 if __name__ == '__main__':
     queue = QueueBase()
     table = TableBase()
