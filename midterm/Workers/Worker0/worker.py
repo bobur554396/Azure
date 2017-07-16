@@ -1,5 +1,7 @@
+# -*- coding: utf-8 -*-
 import os
 import datetime
+import base64
 from time import sleep
 from random import randint
 from BlobBase import BlobBase
@@ -16,6 +18,7 @@ if __name__ == '__main__':
         messages = queue.get_messages_from_queue('generatorsqueue')
         if len(messages) > 0:
             generator_id = messages[0].content
+
             queue.delete_message_from_queue('generatorsqueue', messages[0])
 
 
@@ -36,6 +39,7 @@ if __name__ == '__main__':
             ## step 4 save url into queue
             data = {'id': generator_id, 'url': url, 'day': day }
             data = str(data)
+            print data            
             queue.save_message_to_queue('bloburlsqueue', data)
 
 

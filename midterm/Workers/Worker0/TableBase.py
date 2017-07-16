@@ -2,7 +2,7 @@
 # @Author: bobur
 # @Date:   2017-05-20 17:59:28
 # @Last Modified by:   bobur554395
-# @Last Modified time: 2017-05-22 12:18:47
+# @Last Modified time: 2017-07-15 14:36:57
 
 
 import datetime
@@ -17,7 +17,7 @@ class TableBase(object):
 	
 	def __init__(self):
 		super(TableBase, self).__init__()
-		self.table_service = TableService(account_name='bobur', account_key='6e60FZapOXAmUbFBw0SpE1lHRP3RkXOMYRaalWmRBoz4+xI5tvjaJzxXuYyt+yfWxjPXpz5X3PmyIFiQmSkjbw==')
+		self.table_service = TableService(account_name='boburstorage', account_key='wRgukLsyhLtnI7qEk8mSGnIBC+IsiTTXEDF1/xnmBGDudJLSeYdtyuVzuSN5/cplJz88AJPyoVyjCmL9N1ECXw==')
 		
 
 	def add_empty_row(self, table, partition_key, row_key, status):

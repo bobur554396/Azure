@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 # @Author: bobur
 # @Date:   2017-05-22 10:35:39
-# @Last Modified by:   bobur
-# @Last Modified time: 2017-05-22 12:00:56
+# @Last Modified by:   bobur554395
+# @Last Modified time: 2017-07-15 14:47:31
 
 
 from azure.storage.queue import QueueService
-#import urllib2
+import urllib2
 
 # queue_service.create_queue('taskqueue')
 
@@ -15,7 +15,7 @@ class QueueBase(object):
 
 	def __init__(self):
 		super(QueueBase, self).__init__()
-		self.queue_service = QueueService(account_name='bobur', account_key='6e60FZapOXAmUbFBw0SpE1lHRP3RkXOMYRaalWmRBoz4+xI5tvjaJzxXuYyt+yfWxjPXpz5X3PmyIFiQmSkjbw==')
+		self.queue_service = QueueService(account_name='boburstorage', account_key='wRgukLsyhLtnI7qEk8mSGnIBC+IsiTTXEDF1/xnmBGDudJLSeYdtyuVzuSN5/cplJz88AJPyoVyjCmL9N1ECXw==')
 
 	def save_message_to_queue(self, queue, data):
 		self.queue_service.put_message(queue, data)

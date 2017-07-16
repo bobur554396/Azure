@@ -2,7 +2,7 @@
 # @Author: bobur
 # @Date:   2017-05-22 10:28:48
 # @Last Modified by:   bobur554395
-# @Last Modified time: 2017-05-22 12:06:13
+# @Last Modified time: 2017-07-15 14:36:50
 
 
 from azure.storage.blob import BlockBlobService, ContentSettings
@@ -16,7 +16,7 @@ class BlobBase(object):
 	
 	def __init__(self):
 		super(BlobBase, self).__init__()
-		self.block_blob_service = BlockBlobService(account_name='bobur', account_key='6e60FZapOXAmUbFBw0SpE1lHRP3RkXOMYRaalWmRBoz4+xI5tvjaJzxXuYyt+yfWxjPXpz5X3PmyIFiQmSkjbw==')
+		self.block_blob_service = BlockBlobService(account_name='boburstorage', account_key='wRgukLsyhLtnI7qEk8mSGnIBC+IsiTTXEDF1/xnmBGDudJLSeYdtyuVzuSN5/cplJz88AJPyoVyjCmL9N1ECXw==')
 
 	def save_text_to_blob(self, container, blob_name, text):
 		print('saving blob into container...\n')
